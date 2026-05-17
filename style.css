@@ -695,9 +695,6 @@ body {
 /* ===========================
    LLUVIA DE SOBRES
 =========================== */
-.gift-card .detail-icon {
-  filter: grayscale(1);
-}
 
 .gift-card {
   position: relative;
@@ -769,8 +766,24 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-    filter: grayscale(1);
+}
 
+.detail-icon svg {
+  width: 2.8rem;
+  height: 2.8rem;
+  stroke: var(--sage);
+  color: var(--sage);
+}
+
+.dress-icon {
+  gap: 0.5rem;
+}
+
+.church-icon svg {
+  width: 2.8rem;
+  height: 2.8rem;
+  color: var(--sage);
+  stroke: var(--sage);
 }
 
 .church-icon img {
