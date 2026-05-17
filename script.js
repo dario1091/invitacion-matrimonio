@@ -156,6 +156,9 @@ revealEls.forEach(el => observer.observe(el));
    LIGHTBOX
 =========================== */
 const galleryItems = Array.from(document.querySelectorAll('.gallery-item img'));
+const timelineItems = Array.from(document.querySelectorAll('.timeline-img-clickable img'));
+const allLightboxImgs = [...timelineItems, ...galleryItems];
+
 const lightbox     = document.getElementById('lightbox');
 const lightboxImg  = document.getElementById('lightboxImg');
 const lightboxClose = document.getElementById('lightboxClose');
@@ -165,8 +168,8 @@ let currentIndex = 0;
 
 function openLightbox(index) {
   currentIndex = index;
-  lightboxImg.src = galleryItems[index].src;
-  lightboxImg.alt = galleryItems[index].alt;
+  lightboxImg.src = allLightboxImgs[index].src;
+  lightboxImg.alt = allLightboxImgs[index].alt;
   lightbox.classList.add('active');
   document.body.style.overflow = 'hidden';
 }
@@ -177,16 +180,22 @@ function closeLightbox() {
 }
 
 function showPrev() {
-  currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
-  lightboxImg.src = galleryItems[currentIndex].src;
+  currentIndex = (currentIndex - 1 + allLightboxImgs.length) % allLightboxImgs.length;
+  lightboxImg.src = allLightboxImgs[currentIndex].src;
 }
 
 function showNext() {
-  currentIndex = (currentIndex + 1) % galleryItems.length;
-  lightboxImg.src = galleryItems[currentIndex].src;
+  currentIndex = (currentIndex + 1) % allLightboxImgs.length;
+  lightboxImg.src = allLightboxImgs[currentIndex].src;
 }
 
+// Galería
 galleryItems.forEach((img, i) => {
+  img.parentElement.addEventListener('click', () => openLightbox(timelineItems.length + i));
+});
+
+// Timeline
+timelineItems.forEach((img, i) => {
   img.parentElement.addEventListener('click', () => openLightbox(i));
 });
 

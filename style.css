@@ -475,7 +475,11 @@ body {
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.timeline-img::after {
+.timeline-img-clickable {
+  cursor: zoom-in;
+}
+
+
   content: '';
   position: absolute;
   inset: 0;
