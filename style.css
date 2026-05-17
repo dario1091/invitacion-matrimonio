@@ -652,11 +652,7 @@ body {
 }
 
 .countdown-section::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: url('sources/brayanTatis-29.jpg.jpeg') center 20% / cover no-repeat;
-  opacity: 0.06;
+  display: none;
 }
 
 .countdown-container { position: relative; z-index: 1; max-width: 800px; margin: 0 auto; }
@@ -681,9 +677,9 @@ body {
   font-family: var(--font-serif);
   font-size: clamp(3rem, 10vw, 5.5rem);
   font-weight: 300;
-  color: #ffffff;
+  color: var(--sage-light);
   line-height: 1;
-  text-shadow: 0 0 40px rgba(245,230,163,0.6), 0 2px 8px rgba(0,0,0,0.5);
+  text-shadow: 0 0 30px rgba(138,154,91,0.5);
   transition: transform 0.3s;
 }
 
@@ -694,7 +690,7 @@ body {
   font-size: 0.65rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: var(--yellow-cream);
+  color: var(--sage);
   margin-top: 0.5rem;
 }
 
