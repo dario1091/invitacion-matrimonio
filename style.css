@@ -579,6 +579,8 @@ body {
   color: var(--text);
   margin-bottom: 3rem;
   position: relative;
+  text-align: center;
+  width: 100%;
 }
 
 .section-title::after {
@@ -590,8 +592,8 @@ body {
   margin: 1rem auto 0;
 }
 
-.section-title.light { color: var(--sage-light); }
-.section-title.light::after { background: var(--sage); }
+.section-title.light { color: var(--white); }
+.section-title.light::after { background: var(--gold-light); }
 
 .parents-grid {
   display: flex;
