@@ -592,8 +592,8 @@ body {
   margin: 1rem auto 0;
 }
 
-.section-title.light { color: var(--white); }
-.section-title.light::after { background: var(--gold-light); }
+.section-title.light { color: var(--sage-light); }
+.section-title.light::after { background: var(--sage); }
 
 .parents-grid {
   display: flex;
