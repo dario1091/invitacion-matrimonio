@@ -382,6 +382,7 @@ body {
   background: var(--cream);
   padding: 5rem 2rem;
   text-align: center;
+  overflow: hidden;
 }
 
 .story-container { max-width: 700px; margin: 0 auto; }
@@ -537,14 +538,21 @@ body {
     transform: scale(1.1);
   }
 
-  .timeline-content { max-width: 100%; }
+  .timeline-content {
+    max-width: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
 
   .timeline-img {
     max-width: 100%;
+    width: 100%;
   }
 
   .timeline-img img {
-    height: 160px;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
   }
 }
 
