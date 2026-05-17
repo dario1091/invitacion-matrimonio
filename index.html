@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tatiana & Brayhan – 26 Junio 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- PÉTALOS FLOTANTES -->
+  <div class="petals-container" id="petals"></div>
+
+  <!-- MÚSICA -->
+  <div class="music-btn" id="musicBtn" title="Reproducir música">
+    <span class="music-icon">♪</span>
+  </div>
+  <audio id="bgMusic" loop>
+    <source src="sources/video.mp4" type="video/mp4" />
+  </audio>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-pre">Con la bendición de Dios</p>
+      <div class="hero-names">
+        <div class="name-wrapper">
+          <span class="name-right">Brayhan</span>
+          <span class="name-surname">Fuentes</span>
+        </div>
+        <span class="ampersand">&</span>
+        <div class="name-wrapper">
+
+          <span class="name-left">Tatiana</span>
+          <span class="name-surname">Ropero</span>
+        </div>
+      </div>
+      <p class="hero-surname" style="display:none"></p>
+      <div class="hero-divider">
+        <span class="divider-line"></span>
+        <span class="divider-icon">✦</span>
+        <span class="divider-line"></span>
+      </div>
+      <div class="hero-date-block">
+        <div class="hero-date-row">
+          <span class="hero-date-label">Viernes</span>
+        </div>
+        <div class="hero-date-main">
+          <span class="hero-date-num">26</span>
+          <div class="hero-date-middle">
+            <span class="hero-date-month">Junio</span>
+            <span class="hero-date-sep-v"></span>
+            <span class="hero-date-year">2026</span>
+          </div>
+        </div>
+        <div class="hero-date-row">
+          <span class="hero-time-badge">6:40 PM</span>
+        </div>
+      </div>
+      <a href="#countdown" class="hero-cta scroll-btn">Ver invitación</a>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- VERSÍCULO -->
+  <section class="verse-section">
+    <div class="verse-container">
+      <p class="verse-text">
+        "Uno solo puede ser vencido, pero dos pueden resistir.<br />
+        <em>¡La cuerda de tres hilos no se rompe fácilmente!</em>"
+      </p>
+      <p class="verse-ref">— Eclesiastés 4:12</p>
+    </div>
+  </section>
+
+  <!-- HISTORIA -->
+  <section class="story-section">
+    <div class="story-container">
+      <h2 class="section-title">Nuestra Historia</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot">
+            <span>👦</span>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-img">
+              <img src="sources/niños.PNG" alt="Cuando éramos niños" loading="lazy" />
+            </div>
+            <h3>El inicio</h3>
+            <p>Dos niños que sin saberlo, ya estaban destinados a encontrarse. Dios ya tenía un plan para nosotros.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item right">
+          <div class="timeline-dot">
+            <span>❤</span>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-img">
+              <img src="sources/novios.jpeg" alt="Cuando nos hicimos novios" loading="lazy" />
+            </div>
+            <p class="timeline-date">11 · Junio · 2023</p>
+            <h3>Novios</h3>
+            <p>El día en que esta historia de amor comenzó a escribirse. Dos caminos que se encontraron y decidieron seguir juntos.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot">
+            <span>💍</span>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-img">
+              <img src="sources/matrimonio.jpeg" alt="Nuestro matrimonio" loading="lazy" />
+            </div>
+            <p class="timeline-date">26 · Junio · 2026</p>
+            <h3>El sello</h3>
+            <p>El día en que prometemos amarnos, respetarnos y crecer juntos ante Dios, la familia y los amigos que más queremos.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item right">
+          <div class="timeline-dot">
+            <span>∞</span>
+          </div>
+          <div class="timeline-content">
+            <p class="timeline-date">Para siempre </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PADRES -->
+  <section class="parents-section">
+    <div class="parents-container">
+      <h2 class="section-title">Con la bendición de nuestros padres</h2>
+      <div class="parents-grid">
+        <div class="parent-card">
+          <p class="parent-label">Padres de la novia</p>
+          <p class="parent-name">Atanael Ropero</p>
+          <p class="parent-amp">&</p>
+          <p class="parent-name">Omaira Ibarra</p>
+        </div>
+        <div class="parent-heart">❤</div>
+        <div class="parent-card">
+          <p class="parent-label">Padres del novio</p>
+          <p class="parent-name">Alfonso Fuentes</p>
+          <p class="parent-amp">&</p>
+          <p class="parent-name">Gabriela Puentes</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CUENTA REGRESIVA -->
+  <section class="countdown-section" id="countdown">
+    <div class="countdown-container">
+      <h2 class="section-title light">Faltan...</h2>
+      <div class="countdown-grid">
+        <div class="countdown-item">
+          <span class="countdown-num" id="days">00</span>
+          <span class="countdown-label">Días</span>
+        </div>
+        <div class="countdown-sep">:</div>
+        <div class="countdown-item">
+          <span class="countdown-num" id="hours">00</span>
+          <span class="countdown-label">Horas</span>
+        </div>
+        <div class="countdown-sep">:</div>
+        <div class="countdown-item">
+          <span class="countdown-num" id="minutes">00</span>
+          <span class="countdown-label">Minutos</span>
+        </div>
+        <div class="countdown-sep">:</div>
+        <div class="countdown-item">
+          <span class="countdown-num" id="seconds">00</span>
+          <span class="countdown-label">Segundos</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DETALLES DEL EVENTO -->
+  <section class="details-section">
+    <div class="details-container">
+      <h2 class="section-title">El Gran Día</h2>
+      <div class="details-grid">
+        <div class="detail-card">
+          <div class="detail-icon church-icon">
+            <img src="sources/ipuc.jpeg" alt="IPUC" />
+          </div>
+          <h3>Ceremonia & Recepción</h3>
+          <p>Iglesia IPUC Comuneros</p>
+          <p class="detail-sub">Viernes 26 de Junio, 2026</p>
+          <p class="detail-sub">6:40 PM</p>
+          <a href="https://maps.app.goo.gl/XPrvTbi9xR3oaje4A" target="_blank" class="detail-link">📍 Ver en Google
+            Maps</a>
+        </div>
+        <div class="detail-card gift-card">
+          <div class="gift-envelopes" id="giftEnvelopes"></div>
+          <div class="detail-icon">🎁</div>
+          <h3>Regalo</h3>
+          <p>Lluvia de sobres</p>
+        </div>
+        <div class="detail-card">
+          <div class="detail-icon">👗</div>
+          <h3>Código de vestimenta</h3>
+          <p>Se reservan los colores:</p>
+          <div class="color-chips">
+            <span class="chip white">Blanco</span>
+            <span class="chip yellow">Amarillo</span>
+            <span class="chip green">Verde</span>
+            <span class="chip brown">Marrón</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section class="gallery-section">
+    <div class="gallery-container">
+      <h2 class="section-title">Nuestra Historia</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="sources/brayanTatis-5.jpg.jpeg" alt="Tatiana y Brayhan" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="sources/brayanTatis-7.jpg.jpeg" alt="Tatiana y Brayhan" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="sources/brayanTatis-9.jpg.jpeg" alt="Tatiana y Brayhan" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="sources/brayanTatis-11.jpg.jpeg" alt="Tatiana y Brayhan" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="sources/brayanTatis-14.jpg.jpeg" alt="Tatiana y Brayhan" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="sources/brayanTatis-20.jpg.jpeg" alt="Tatiana y Brayhan" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="sources/brayanTatis-23.jpg.jpeg" alt="Tatiana y Brayhan" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="sources/brayanTatis-29.jpg.jpeg" alt="Tatiana y Brayhan" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CANCIÓN -->
+  <section class="song-section">
+    <div class="song-container">
+      <p class="song-label">♪ Nuestra canción</p>
+      <p class="song-title">Para Tu Amor</p>
+      <p class="song-artist">Juanes</p>
+    </div>
+  </section>
+
+  <!-- RSVP -->
+  <section class="rsvp-section" id="rsvp">
+    <div class="rsvp-container">
+      <h2 class="section-title light">Confirma tu asistencia</h2>
+      <p class="rsvp-sub">Nos encantaría contar con tu presencia</p>
+      <div class="rsvp-buttons">
+        <a href="https://wa.me/573134273486?text=Hola%20Brayhan!%20Confirmo%20mi%20asistencia%20a%20su%20boda%20el%2026%20de%20junio%20%F0%9F%8E%89"
+          target="_blank" class="rsvp-btn groom">
+          <span class="wpp-icon">💬</span>
+          Confirmar con el novio<br /><small>Brayhan</small>
+        </a>
+        <a href="https://wa.me/573213319688?text=Hola%20Tati!%20Confirmo%20mi%20asistencia%20a%20su%20boda%20el%2026%20de%20junio%20%F0%9F%8E%89"
+          target="_blank" class="rsvp-btn bride">
+          <span class="wpp-icon">💬</span>
+          Confirmar con la novia<br /><small>Tatiana</small>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p class="footer-names">Tatiana & Brayhan</p>
+    <p class="footer-date">26 · 06 · 2026</p>
+    <p class="footer-verse">❤ Con amor y fe</p>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">✕</button>
+    <button class="lightbox-prev" id="lightboxPrev">‹</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="" />
+    <button class="lightbox-next" id="lightboxNext">›</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
