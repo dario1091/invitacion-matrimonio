@@ -442,6 +442,7 @@ body {
 .timeline-dot span {
   color: var(--yellow-cream);
   text-shadow: 0 0 6px rgba(245,230,163,0.6);
+  font-family: var(--font-serif);
 }
 
 .timeline-item:hover .timeline-dot {
@@ -633,7 +634,9 @@ body {
 
 .parent-heart {
   font-size: 2rem;
-  color: var(--gold);
+  color: var(--yellow-cream);
+  font-family: var(--font-serif);
+}
   flex-shrink: 0;
 }
 
@@ -1167,7 +1170,7 @@ body {
   .g-tall { grid-row: span 1; }
 
   .parents-grid { flex-direction: column; align-items: center; }
-  .parent-heart { transform: rotate(90deg); }
+  .parent-heart { transform: none; }
 
   .countdown-item { min-width: 70px; }
   .countdown-sep { display: none; }
