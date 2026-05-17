@@ -590,8 +590,8 @@ body {
   margin: 1rem auto 0;
 }
 
-.section-title.light { color: var(--white); }
-.section-title.light::after { background: var(--gold-light); }
+.section-title.light { color: var(--sage-light); }
+.section-title.light::after { background: var(--sage); }
 
 .parents-grid {
   display: flex;
@@ -644,7 +644,7 @@ body {
    CUENTA REGRESIVA
 =========================== */
 .countdown-section {
-  background: linear-gradient(135deg, #1a1208 0%, #2d1f08 50%, #1a1208 100%);
+  background: #1a1f0e;
   padding: 5rem 2rem;
   text-align: center;
   position: relative;
