@@ -495,7 +495,7 @@ body {
 
 .timeline-img img {
   width: 100%;
-  height: 200px;
+  height: 230px;
   object-fit: cover;
   display: block;
   transition: transform 0.5s ease;
@@ -555,7 +555,7 @@ body {
   }
 
   .timeline-img img {
-    height: 200px;
+    height: 220px;
     width: 100%;
     object-fit: cover;
   }
